@@ -20,7 +20,3 @@ Each drawing is a sequence of strokes stored in `.npz` format. We preprocess and
 
 ### Sample Output
 > ![image](https://github.com/user-attachments/assets/d2e7c9a1-9938-42fe-bcf0-ccd425fc985c)
-
----
-
-Let me know if you'd like me to write the full `README.md` (with usage instructions, requirements, etc.) or help you generate a preview image for the repo!
