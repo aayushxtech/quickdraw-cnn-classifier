@@ -29,23 +29,22 @@ This project implements a Convolutional Neural Network (CNN) from scratch using 
 
 ### Model Architecture
 
-| Layer | Type | Channels | Description |
-|-------|------|----------|-------------|
-| `Conv2D` | 1 → 32 | `3x3`, padding=1 |
-| `BatchNorm2d` | 32 | + ReLU |
-| `MaxPool2D` | `2x2` | Downsampling |
-| `Conv2D` | 32 → 64 | `3x3`, padding=1 |
-| `BatchNorm2d` | 64 | + ReLU |
-| `MaxPool2D` | `2x2` | Downsampling |
-| `Conv2D` | 64 → 128 | `3x3`, padding=1 |
-| `BatchNorm2d` | 128 | + ReLU |
-| `MaxPool2D` | `2x2` | Downsampling |
-| `Linear` | 32768 → 256 | FC Layer + ReLU + Dropout |
-| `Linear` | 256 → 15 | Output logits |
+| Layer | Type | Channels |
+|-------|------|----------|
+| `Conv2D` | 1 → 32 | `3x3`, padding=1
+| `BatchNorm2d` | 32 | + ReLU
+| `MaxPool2D` | `2x2` | Downsampling
+| `Conv2D` | 32 → 64 | `3x3`, padding=1
+| `BatchNorm2d` | 64 | + ReLU
+| `MaxPool2D` | `2x2` | Downsampling|
+| `Conv2D` | 64 → 128 | `3x3`, padding=1
+| `BatchNorm2d` | 128 | + ReLU
+| `MaxPool2D` | `2x2` | Downsampling 
+| `Linear` | 32768 → 256 | FC Layer + ReLU + Dropout 
+| `Linear` | 256 → 15 | Output logits 
 
 - **Loss Function**: `CrossEntropyLoss`
 - **Optimizer**: `Adam (lr=1e-3)`
-- **Evaluation Metrics**: Accuracy on test set
 
 ---
 
